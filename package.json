@@ -1,0 +1,11 @@
+{
+  "name": "create-node-app",
+  "version": "1.0.0",
+  "description": "Creates a skeleton nodejs app with routes and database models.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Rui Aguiar",
+  "license": "MIT"
+}
