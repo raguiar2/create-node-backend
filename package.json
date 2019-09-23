@@ -1,11 +1,15 @@
 {
   "name": "create-node-app",
   "version": "1.0.0",
-  "description": "Creates a skeleton nodejs app with routes and database models.",
-  "main": "index.js",
+  "description": "Creates a nodejs app with postgres and express-promise-router.",
+  "main": "cli.js",
   "scripts": {
-    "test": "npm test"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Rui Aguiar",
-  "license": "MIT"
+  "license": "ISC",
+  "bin": {
+    "create-node-app": "./cli.js"
+  },
+  "dependencies": {}
 }
