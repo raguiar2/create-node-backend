@@ -6,10 +6,11 @@ const [,, ...args] = process.argv;
 
 const newDir = args[0];
 
-const command = `mkdir -p ${newDir} && cp ${__dirname}/files ${newDir} && cd ${newDir} && npm i`;
+const command = `mkdir -p ${newDir} && cp -r ${__dirname}/files/. ${newDir} && cd ${newDir} && npm i`;
 
 dir = exec(command, function(err, stdout, stderr) {
     if (err) {
+      console.log("err is", err)
       // should have err.code here?  
     }
     console.log(stdout);
