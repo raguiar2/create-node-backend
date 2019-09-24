@@ -1,6 +1,6 @@
 {
-  "name": "create-node-app",
-  "version": "1.0.0",
+  "name": "create-node-backend",
+  "version": "1.0.1",
   "description": "Creates a nodejs app with postgres and express-promise-router.",
   "main": "cli.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "author": "Rui Aguiar",
   "license": "ISC",
   "bin": {
-    "create-node-app": "./cli.js"
+    "create-node-project": "./cli.js"
   },
   "dependencies": {}
 }
