@@ -1,15 +1,15 @@
-# create-node-project
+# create-node-backend
 
-`create-node-project` is intended to make creating backend nodejs apps easy by minimizing the amount of boilerplate needed, and by setting up a structure that you can easily extend. If you want to set up a minimalist, extensible nodejs backend with minimal friction, `create-node-project` is probably right for you. 
+`create-node-backend` is intended to make creating backend nodejs apps easy by minimizing the amount of boilerplate needed, and by setting up a structure that you can easily extend. If you want to set up a minimalist, extensible nodejs backend with minimal friction, `create-node-backend` is probably right for you. 
 
 ## Installation:
-`npm i -g create-node-project`
+`npm i -g create-node-backend`
 
 ## Running
-`create-node-project <target_dir>` 
+`create-node-backend <target_dir>` 
 
 ## Usage
-`create-node-project <target_dir>` sets up the following file structure in the target directory 
+`create-node-backend <target_dir>` sets up the following file structure in the target directory 
 
 ```
  app.js
@@ -20,7 +20,7 @@
   - index.js
 ```
 
-create-node-project also installs the required packages for you, including [pg](https://www.npmjs.com/package/pg) and [express-promise-router](https://www.npmjs.com/package/express-promise-router). All you have to do is set up the database from the command line
+create-node-backend also installs the required packages for you, including [pg](https://www.npmjs.com/package/pg) and [express-promise-router](https://www.npmjs.com/package/express-promise-router). All you have to do is set up the database from the command line
 
 ## Starting The Project
 
@@ -35,7 +35,7 @@ const pool = new Pool({
 });
 ```
 
-create-node-project starts off with a `routes/user.js` file that assumes you have a table called `users` in your postgres database. This is not required for setup, but the route will not work without it. 
+create-node-backend starts off with a `routes/user.js` file that assumes you have a table called `users` in your postgres database. This is not required for setup, but the route will not work without it. 
 
 To start the project, `cd` into your target directory and run `node app.js` or `npm start`. You can also run it with `nodemon app.js` 
 
