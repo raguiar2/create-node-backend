@@ -1,5 +1,7 @@
 # create-node-project
 
+`create-node-project` is intended to make creating backend nodejs apps easy by minimizing the amount of boilerplate needed, and by setting up a structure that you can easily extend. If you want to set up a minimalist, extensible nodejs backend with minimal friction, `create-node-project` is probably right for you. 
+
 ## Installation:
 `npm i -g create-node-project`
 
@@ -7,11 +9,8 @@
 `create-node-project <target_dir>` 
 
 ## Usage
-`create-node-project` is intended to make creating backend nodejs apps easy by minimizing the amount of boilerplate needed, and by setting up a structure that you can easily extend.  
-
 `create-node-project <target_dir>` sets up the following file structure in the target directory 
 
-## File Structure
 ```
  app.js
  routes/
@@ -21,10 +20,9 @@
   - index.js
 ```
 
+create-node-project also installs the required packages for you, including [pg](https://www.npmjs.com/package/pg) and [express-promise-router](https://www.npmjs.com/package/express-promise-router). All you have to do is set up the database from the command line
 
 ## Starting The Project
-
-create-node-project also installs the required packages for you, including [pg](https://www.npmjs.com/package/pg) and [express-promise-router](https://www.npmjs.com/package/express-promise-router). All you have to do is set up the database from the command line
 
 First, ensure postgres is set up using `psql`. Ensure your user, host and database names exist, or specify a connection string instead. You can edit the postgres connection configuration in `db/index.js` at the following lines
 
