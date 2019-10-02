@@ -1,6 +1,6 @@
 {
   "name": "create-node-backend",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Creates a nodejs app with postgres and express-promise-router.",
   "main": "cli.js",
   "scripts": {
@@ -10,6 +10,10 @@
   "license": "ISC",
   "bin": {
     "create-node-backend": "./cli.js"
+  },
+  "repository": {
+  "type" : "git",
+      "url" : "https://github.com/raguiar2/create-node-backend.git"
   },
   "dependencies": {}
 }
